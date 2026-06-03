@@ -1235,43 +1235,64 @@ app.get('/api/backups/history', checkAuth('admin'), (req: AuthRequest, res: Resp
 // --- INTEGRATE VITE PROGRAMMATICALLY IN DEV / SERVE STATIC FILES IN PROD ---
 
 async function startServer() {
-  if (!isProd) {
-    // Dynamically load Vite to avoid bundling it inside production package or crashing in runtime
-    const { createServer: createViteServer } = await import('vite');
-    const vite = await createViteServer({
-      server: { middlewareMode: true },
-      appType: 'custom'
+  try {
+    if (!isProd) {
+      // Dynamically load Vite to avoid bundling it inside production package or crashing in runtime
+      const { createServer: createViteServer } = await import('vite');
+      const vite = await createViteServer({
+        server: { middlewareMode: true },
+        appType: 'custom'
+      });
+
+      app.use(vite.middlewares);
+
+      // Dynamic SPA Fallback
+      app.use('*', async (req, res) => {
+        const url = req.originalUrl;
+        try {
+          let template = fs.readFileSync(path.resolve(process.cwd(), 'index.html'), 'utf-8');
+          template = await vite.transformIndexHtml(url, template);
+          res.status(200).set({ 'Content-Type': 'text/html' }).end(template);
+        } catch (e: any) {
+          vite.ssrFixStacktrace(e);
+          res.status(500).end(e.stack);
+        }
+      });
+    } else {
+      // Server static bundle files
+      app.use(express.static(path.join(process.cwd(), 'dist')));
+
+      // Serve index.html as fallback for Router history support
+      app.get('*', (req, res) => {
+        res.sendFile(path.join(process.cwd(), 'dist', 'index.html'));
+      });
+    }
+
+    const server = app.listen(port, '0.0.0.0', () => {
+      console.log(`Fullstack server running successfully at http://localhost:${port} in ${isProd ? 'PRODUCTION' : 'DEVELOPMENT'} mode.`);
     });
 
-    app.use(vite.middlewares);
-
-    // Dynamic SPA Fallback
-    app.use('*', async (req, res) => {
-      const url = req.originalUrl;
-      try {
-        let template = fs.readFileSync(path.resolve(process.cwd(), 'index.html'), 'utf-8');
-        template = await vite.transformIndexHtml(url, template);
-        res.status(200).set({ 'Content-Type': 'text/html' }).end(template);
-      } catch (e: any) {
-        vite.ssrFixStacktrace(e);
-        res.status(500).end(e.stack);
-      }
+    server.on('error', (err: NodeJS.ErrnoException) => {
+      console.error('Server runtime error:', err);
+      process.exit(1);
     });
-  } else {
-    // Server static bundle files
-    app.use(express.static(path.join(process.cwd(), 'dist')));
-    
-    // Serve index.html as fallback for Router history support
-    app.get('*', (req, res) => {
-      res.sendFile(path.join(process.cwd(), 'dist', 'index.html'));
-    });
+  } catch (err) {
+    console.error('Error during server startup:', err);
+    process.exit(1);
   }
-
-  app.listen(port, '0.0.0.0', () => {
-    console.log(`Fullstack server running successfully at http://localhost:${port} in ${isProd ? 'PRODUCTION' : 'DEVELOPMENT'} mode.`);
-  });
 }
+
+process.on('uncaughtException', (err) => {
+  console.error('Uncaught exception:', err);
+  process.exit(1);
+});
+
+process.on('unhandledRejection', (reason, promise) => {
+  console.error('Unhandled promise rejection at:', promise, 'reason:', reason);
+  process.exit(1);
+});
 
 startServer().catch(err => {
   console.error('Failed to start server:', err);
+  process.exit(1);
 });
