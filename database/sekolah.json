@@ -1,0 +1,605 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "role": "admin",
+      "nama_lengkap": "Administrator",
+      "email": "admin@binabangsa.sch.id",
+      "created_at": "2026-01-01T00:00:00.000Z",
+      "password": "4dm1nisTRATOR",
+      "last_login": "2026-06-03T02:44:05.997Z"
+    },
+    {
+      "id": 2,
+      "username": "operator",
+      "role": "operator",
+      "nama_lengkap": "Operator Sekolah",
+      "email": "operator@binabangsa.sch.id",
+      "created_at": "2026-01-01T00:00:00.000Z",
+      "password": "operator123"
+    }
+  ],
+  "sekolah": {
+    "id": 1,
+    "nama": "SMP Bina Bangsa Indonesia",
+    "npsn": "20212345",
+    "akreditasi": "B",
+    "status": "Swasta",
+    "telepon": "022-5551234",
+    "email": "info@binabangsa.sch.id",
+    "alamat": "Jl. Raya Pendidikan No. 45, Soreang, Kabupaten Bandung, Jawa Barat",
+    "kepala_sekolah": "Lendi Esa Nugraha, S.Sn",
+    "tahun_berdiri": "2010",
+    "visi": "Mewujudkan generasi yang bertaqwa, cerdas, berkarakter, unggul dalam prestasi, dan berwawasan lingkungan.",
+    "misi": [
+      "Menanamkan keimanan dan ketaqwaan melalui pembiasaan keagamaan.",
+      "Melaksanakan pembelajaran yang aktif, inovatif, kreatif, dan menyenangkan.",
+      "Mengembangkan minat, bakat, dan potensi murid melalui ekstrakurikuler.",
+      "Membentuk karakter disiplin, sopan santun, dan peduli lingkungan.",
+      "Menerapkan tata kelola sekolah yang transparan dan akuntabel berbasis digital."
+    ],
+    "logo": ""
+  },
+  "sosial_media": [
+    {
+      "id": 1,
+      "platform": "facebook",
+      "url": "https://facebook.com/smpbinabangsa",
+      "ikon": "Facebook"
+    },
+    {
+      "id": 2,
+      "platform": "instagram",
+      "url": "https://instagram.com/smpbinabangsa",
+      "ikon": "Instagram"
+    },
+    {
+      "id": 3,
+      "platform": "youtube",
+      "url": "https://youtube.com/c/smpbinabangsatv",
+      "ikon": "Youtube"
+    },
+    {
+      "id": 4,
+      "platform": "twitter",
+      "url": "https://twitter.com/smpbinabangsa",
+      "ikon": "Twitter"
+    }
+  ],
+  "kontak": [
+    {
+      "id": 1,
+      "tipe": "whatsapp",
+      "value": "088220512135",
+      "label": "Hubungi Kami (WhatsApp)"
+    },
+    {
+      "id": 2,
+      "tipe": "maps_embed",
+      "value": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126748.56347862214!2d107.57311635!3d-6.9034443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6398252477f%3A0x146a16b4c3e8e124!2sBandung%2C%20West%20Java!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid",
+      "label": "Peta Lokasi"
+    },
+    {
+      "id": 3,
+      "tipe": "jam_operasional",
+      "value": "Senin - Jumat: 07:00 - 15:00 WIB",
+      "label": "Jam Kerja"
+    }
+  ],
+  "menus": [
+    {
+      "id": 1,
+      "label": "Beranda",
+      "url": "#home",
+      "parent_id": null,
+      "urutan": 1,
+      "is_active": 1
+    },
+    {
+      "id": 3,
+      "label": "Visi Misi",
+      "url": "#visi-misi",
+      "parent_id": 2,
+      "urutan": 1,
+      "is_active": 1
+    },
+    {
+      "id": 2,
+      "label": "Profil",
+      "url": "#profil",
+      "parent_id": null,
+      "urutan": 2,
+      "is_active": 1
+    },
+    {
+      "id": 4,
+      "label": "Guru & Staff",
+      "url": "#guru",
+      "parent_id": 2,
+      "urutan": 2,
+      "is_active": 1
+    },
+    {
+      "id": 5,
+      "label": "Fasilitas",
+      "url": "#fasilitas",
+      "parent_id": null,
+      "urutan": 3,
+      "is_active": 1
+    },
+    {
+      "id": 6,
+      "label": "Ekstrakurikuler",
+      "url": "#ekskul",
+      "parent_id": null,
+      "urutan": 4,
+      "is_active": 1
+    },
+    {
+      "id": 7,
+      "label": "Prestasi",
+      "url": "#prestasi",
+      "parent_id": null,
+      "urutan": 5,
+      "is_active": 1
+    },
+    {
+      "id": 8,
+      "label": "Galeri",
+      "url": "#galeri",
+      "parent_id": null,
+      "urutan": 6,
+      "is_active": 1
+    },
+    {
+      "id": 9,
+      "label": "Artikel",
+      "url": "#artikel",
+      "parent_id": null,
+      "urutan": 7,
+      "is_active": 1
+    },
+    {
+      "id": 10,
+      "label": "Kontak",
+      "url": "#kontak",
+      "parent_id": null,
+      "urutan": 8,
+      "is_active": 1
+    }
+  ],
+  "banners": [
+    {
+      "id": 1,
+      "judul": "Pendidikan Berkualitas, Karakter Unggul",
+      "subjudul": "Selamat datang di SMP Bina Bangsa Indonesia. Kami berkomitmen mencetak generasi cerdas, mandiri, dan berbudi pekerti luhur.",
+      "gambar": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1200&auto=format&fit=crop",
+      "tombol_teks": "Temukan Visi Kami",
+      "tombol_link": "#visi-misi",
+      "urutan": 1,
+      "is_active": 1
+    },
+    {
+      "id": 2,
+      "judul": "Fasilitas Belajar Modern & Ramah Lingkungan",
+      "subjudul": "Didukung sarana penunjang yang canggih untuk mengoptimalkan potensi akademis dan kreativitas murid.",
+      "gambar": "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1200&auto=format&fit=crop",
+      "tombol_teks": "Lihat Fasilitas",
+      "tombol_link": "#fasilitas",
+      "urutan": 2,
+      "is_active": 1
+    }
+  ],
+  "fasilitas": [
+    {
+      "id": 1,
+      "judul": "Laboratorium Komputer",
+      "deskripsi": "Laboratorium modern dengan 40 unit komputer berspesifikasi tinggi dan koneksi internet cepat untuk mendukung kecakapan teknologi murid.",
+      "ikon": "Laptop",
+      "gambar": "https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=600&auto=format&fit=crop",
+      "urutan": 1,
+      "is_active": 1
+    },
+    {
+      "id": 2,
+      "judul": "Perpustakaan Literasi",
+      "deskripsi": "Berisi ribuan koleksi buku fiksi, non-fiksi, ensiklopedia, serta ruang baca ber-AC yang nyaman untuk merangsang minat baca murid.",
+      "ikon": "BookOpen",
+      "gambar": "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=600&auto=format&fit=crop",
+      "urutan": 2,
+      "is_active": 1
+    },
+    {
+      "id": 3,
+      "judul": "Laboratorium IPA Terpadu",
+      "deskripsi": "Lengkap dengan alat peraga biologi, peralatan praktikum kimia, dan sarana fisika untuk menguji teori keilmuan secara langsung.",
+      "ikon": "FlaskConical",
+      "gambar": "https://images.unsplash.com/photo-1507668077129-56e32842fceb?q=80&w=600&auto=format&fit=crop",
+      "urutan": 3,
+      "is_active": 1
+    }
+  ],
+  "ekskul": [
+    {
+      "id": 1,
+      "judul": "Pramuka (Wajib)",
+      "deskripsi": "Membentuk kemandirian, kedisiplinan, kerjasama kelompok, jiwa kepemimpinan, dan kecintaan pada tanah air dan sesama.",
+      "ikon": "Compass",
+      "gambar": "https://images.unsplash.com/photo-1564981797816-1043d01bf53d?q=80&w=600&auto=format&fit=crop",
+      "urutan": 1,
+      "is_active": 1
+    },
+    {
+      "id": 2,
+      "judul": "Klub Robotik",
+      "deskripsi": "Memperkenalkan ilmu dasar mekatronika dan koding dasar untuk merancang robot cerdas guna mengikuti kompetisi nasional.",
+      "ikon": "Cpu",
+      "gambar": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=600&auto=format&fit=crop",
+      "urutan": 2,
+      "is_active": 1
+    },
+    {
+      "id": 3,
+      "judul": "Paskibra",
+      "deskripsi": "Menanamkan rasa patriotisme, kekeluargaan, sikap tegap sigap, serta meningkatkan kesadaran berbangsa lewat baris-berbaris.",
+      "ikon": "Shield",
+      "gambar": "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=600&auto=format&fit=crop",
+      "urutan": 3,
+      "is_active": 1
+    }
+  ],
+  "guru": [
+    {
+      "id": 1,
+      "nama": "Drs. Supriyanto, M.M.",
+      "jabatan": "Wakil Kepala Sekolah",
+      "mapel": "Matematika",
+      "foto": "",
+      "urutan": 1,
+      "is_active": 1,
+      "jabatan_id": 3,
+      "nik": "",
+      "nuptk": "",
+      "kontak": "",
+      "email": "",
+      "wali_kelas": ""
+    },
+    {
+      "id": 2,
+      "nama": "Sari Handayani, S.Pd.",
+      "jabatan": "Guru Ahli Utama",
+      "mapel": "Bahasa Inggris",
+      "foto": "",
+      "urutan": 2,
+      "is_active": 1,
+      "jabatan_id": 7,
+      "nik": "",
+      "nuptk": "",
+      "kontak": "",
+      "email": "",
+      "wali_kelas": ""
+    },
+    {
+      "id": 3,
+      "nama": "Budi Hartono, S.T.",
+      "jabatan": "Kepala Lab TI",
+      "mapel": "Informatika",
+      "foto": "",
+      "urutan": 3,
+      "is_active": 1,
+      "jabatan_id": 7,
+      "nik": "",
+      "nuptk": "",
+      "kontak": "",
+      "email": "",
+      "wali_kelas": ""
+    }
+  ],
+  "prestasi": [
+    {
+      "id": 1,
+      "judul": "Juara 1 Olimpiade Sains Nasional (OSN) Biologi",
+      "tahun": "2025",
+      "deskripsi": "Prestasi gemilang diraih murid kami, Keysha Anandita, yang berhasil menyabet medali emas di tingkat Provinsi Jawa Barat.",
+      "gambar": "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?q=80&w=600&auto=format&fit=crop",
+      "urutan": 1,
+      "is_active": 1
+    },
+    {
+      "id": 2,
+      "judul": "Juara Umum Turnamen Futsal Bupati Cup",
+      "tahun": "2025",
+      "deskripsi": "Tim Futsal kebanggaan sekolahan membawa pulang Piala Bergilir setelah memenangkan babak final dengan skor telak 4-1.",
+      "gambar": "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?q=80&w=600&auto=format&fit=crop",
+      "urutan": 2,
+      "is_active": 1
+    }
+  ],
+  "galeri": [
+    {
+      "id": 1,
+      "judul": "Upacara Bendera Hari Kemerdekaan",
+      "gambar": "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=600&auto=format&fit=crop",
+      "tipe": "image",
+      "urutan": 1,
+      "is_active": 1
+    },
+    {
+      "id": 2,
+      "judul": "Profil Singkat Sekolah",
+      "gambar": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=600&auto=format&fit=crop",
+      "tipe": "youtube",
+      "embed_id": "dQw4w9WgXcQ",
+      "urutan": 2,
+      "is_active": 1
+    }
+  ],
+  "artikel": [
+    {
+      "id": 3,
+      "judul": "Sambutan Kepala Sekolah - Selamat Datang di SMP Bina Bangsa Indonesia",
+      "ringkasan": "Sambutan hangat dari kepala sekolah untuk menyambut seluruh civitas akademika di tahun ajaran baru.",
+      "isi": "<p>Salam sejahtera untuk kita semua,</p><p>Selamat datang di tahun ajaran baru, di mana semangat baru akan membawa kita pada pencapaian yang lebih gemilang. Kami berkomitmen untuk terus meningkatkan mutu pendidikan di SMP Bina Bangsa Indonesia.</p><p>Mari kita bekerja sama untuk menciptakan lingkungan belajar yang inspiratif dan kreatif.</p>",
+      "gambar": "https://images.unsplash.com/photo-1519098901909-b1551a11e138?q=80&w=800&auto=format&fit=crop",
+      "tanggal": "2026-06-03",
+      "status": "publish",
+      "created_at": "2026-06-03T02:00:00.000Z"
+    },
+    {
+      "id": 1,
+      "judul": "Penerimaan Peserta Didik Baru (PPDB) Tahun Ajaran 2026/2027 Telah Dibuka",
+      "ringkasan": "SMP Bina Bangsa Indonesia Soreang resmi membuka pendaftaran murid baru. Simak persyaratan lengkap jalur zonasi, prestasi, dan afirmasi di sini.",
+      "isi": "<p>Kabar gembira untuk segenap calon siswa baru. SMP Bina Bangsa Indonesia secara resmi mengumumkan pembukaan pendaftaran murid baru (PPDB) untuk tahun pelajaran 2026/2027.</p><p>Kami menyediakan tiga jalur seleksi utama yang dapat dipilih:</p><ul><li><strong>Jalur Prestasi:</strong> Menggunakan nilai raport rata-rata atau piagam perlombaan minimal tingkat kabupaten.</li><li><strong>Jalur Zonasi:</strong> Memprioritaskan domisili siswa terdekat dari lokasi sekolah.</li><li><strong>Jalur Kemitraan & Afirmasi:</strong> Ditujukan untuk siswa berlatar keluarga prasejahtera dengan dukungan beasiswa penuh hingga lulus.</li></ul><p>Pendaftaran gelombang pertama berlangsung dari <strong>1 Juni 2026 hingga 25 Juli 2026</strong> secara online maupun langsung di kantor sekretariat panitia.</p>",
+      "gambar": "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?q=80&w=800&auto=format&fit=crop",
+      "tanggal": "2026-06-01",
+      "status": "publish",
+      "created_at": "2026-06-01T00:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "judul": "Pelaksanaan Pentas Seni & Kreativitas Akhir Tahun Berlangsung Meriah",
+      "ringkasan": "Pentas seni tahunan SMP Bina Bangsa Indonesia diisi oleh kreativitas teater, tarian tradisional d hingga stan bazar kewirausahaan murid.",
+      "isi": "<p>Tepat pada akhir semester genap kemarin, halaman utama SMP Bina Bangsa Indonesia disulap menjadi panggung megah pagelaran seni dan kewirausahaan murid.</p><p>Kegiatan tahunan ini diselenggarakan sebagai wadah asesmen kreativitas seni budaya sekaligus mengasah jiwa kemandirian finansial murid melalui bazar kuliner sehat nusantara.</p><p>Kombinasi tarian tradisional Jaipong kolosal dan pertunjukan angklung modern memukau para wali murid serta penonton yang hadir.</p>",
+      "gambar": "https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=800&auto=format&fit=crop",
+      "tanggal": "2026-05-28",
+      "status": "publish",
+      "created_at": "2026-05-28T00:00:00.000Z"
+    }
+  ],
+  "pengaturan": [
+    {
+      "key": "site_title",
+      "value": "SMP BINA BANGSA INDONESIA",
+      "deskripsi": "Judul website"
+    },
+    {
+      "key": "footer_text",
+      "value": "© 2026 SMP Bina Bangsa Indonesia. All rights reserved.",
+      "deskripsi": "Teks footer"
+    },
+    {
+      "key": "meta_description",
+      "value": "Sekolah unggul berprestasi dan berkarakter mulia di Soreang, Kabupaten Bandung",
+      "deskripsi": "Meta deskripsi SEO"
+    }
+  ],
+  "log_aktivitas": [
+    {
+      "id": 9,
+      "user_id": 1,
+      "username": "admin",
+      "aksi": "Login Berhasil",
+      "detail": "User admin (admin) berhasil masuk ke admin panel.",
+      "ip_address": "114.10.145.171",
+      "created_at": "2026-06-03T02:44:05.998Z"
+    },
+    {
+      "id": 8,
+      "user_id": 1,
+      "username": "admin",
+      "aksi": "Logout",
+      "detail": "User admin berhasil keluar sistem.",
+      "ip_address": "114.10.148.171",
+      "created_at": "2026-06-03T00:38:12.344Z"
+    },
+    {
+      "id": 7,
+      "user_id": 1,
+      "username": "admin",
+      "aksi": "Login Berhasil",
+      "detail": "User admin (admin) berhasil masuk ke admin panel.",
+      "ip_address": "114.10.145.171",
+      "created_at": "2026-06-03T00:33:01.232Z"
+    },
+    {
+      "id": 6,
+      "user_id": 1,
+      "username": "admin",
+      "aksi": "Logout",
+      "detail": "User admin berhasil keluar sistem.",
+      "ip_address": "114.10.148.171",
+      "created_at": "2026-06-03T00:30:46.934Z"
+    },
+    {
+      "id": 5,
+      "user_id": 1,
+      "username": "admin",
+      "aksi": "Ubah Profil",
+      "detail": "Mengubah informasi profil dasar sekolah.",
+      "ip_address": "114.10.148.171",
+      "created_at": "2026-06-02T23:59:40.854Z"
+    },
+    {
+      "id": 4,
+      "user_id": 1,
+      "username": "admin",
+      "aksi": "Ubah Profil",
+      "detail": "Mengubah informasi profil dasar sekolah.",
+      "ip_address": "114.10.148.171",
+      "created_at": "2026-06-02T23:56:37.396Z"
+    },
+    {
+      "id": 3,
+      "user_id": 1,
+      "username": "admin",
+      "aksi": "Login Berhasil",
+      "detail": "User admin (admin) berhasil masuk ke admin panel.",
+      "ip_address": "114.10.148.171",
+      "created_at": "2026-06-02T23:54:25.408Z"
+    },
+    {
+      "id": 2,
+      "user_id": 2,
+      "username": "operator",
+      "aksi": "Logout",
+      "detail": "User operator berhasil keluar sistem.",
+      "ip_address": "114.10.145.171",
+      "created_at": "2026-06-02T23:53:41.498Z"
+    },
+    {
+      "id": 1,
+      "user_id": 1,
+      "username": "admin",
+      "aksi": "Inisialisasi Database",
+      "detail": "Sistem berhasil menginisialisasi database sekolah default.",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-06-02T23:07:10.567Z"
+    },
+    {
+      "id": 10,
+      "user_id": 1,
+      "username": "admin",
+      "aksi": "Logout",
+      "detail": "User admin berhasil keluar sistem.",
+      "ip_address": "114.10.148.171",
+      "created_at": "2026-06-03T03:19:22.518Z"
+    }
+  ],
+  "login_attempts": [],
+  "jabatan": [
+    {
+      "id": 1,
+      "nama": "Kepala Yayasan",
+      "tingkat": 1,
+      "parent_id": null,
+      "urutan": 1,
+      "is_active": 1
+    },
+    {
+      "id": 2,
+      "nama": "Kepala Sekolah",
+      "tingkat": 2,
+      "parent_id": null,
+      "urutan": 2,
+      "is_active": 1
+    },
+    {
+      "id": 3,
+      "nama": "Wakil Kepala Sekolah",
+      "tingkat": 2,
+      "parent_id": 2,
+      "urutan": 3,
+      "is_active": 1
+    },
+    {
+      "id": 4,
+      "nama": "Kepala Tata Usaha",
+      "tingkat": 2,
+      "parent_id": 2,
+      "urutan": 4,
+      "is_active": 1
+    },
+    {
+      "id": 5,
+      "nama": "Koordinator Kurikulum",
+      "tingkat": 3,
+      "parent_id": 3,
+      "urutan": 5,
+      "is_active": 1
+    },
+    {
+      "id": 6,
+      "nama": "Wali Kelas",
+      "tingkat": 3,
+      "parent_id": 3,
+      "urutan": 6,
+      "is_active": 1
+    },
+    {
+      "id": 7,
+      "nama": "Guru Mapel",
+      "tingkat": 3,
+      "parent_id": 3,
+      "urutan": 7,
+      "is_active": 1
+    },
+    {
+      "id": 8,
+      "nama": "Staff Tata Usaha",
+      "tingkat": 3,
+      "parent_id": 4,
+      "urutan": 8,
+      "is_active": 1
+    }
+  ],
+  "ppdb": [
+    {
+      "id": 1,
+      "tahun_ajaran": "2025/2026",
+      "gelombang": "Gelombang 1",
+      "tanggal_mulai": "2025-01-01",
+      "tanggal_selesai": "2025-03-31",
+      "kuota": 120,
+      "link_pendaftaran": "https://forms.google.com/your-form",
+      "kontak_wa": "6288220512135",
+      "is_active": 1
+    }
+  ],
+  "pendaftaran_ppdb": [
+    {
+      "id": "PPDB-482012",
+      "nama": "Budi Santoso",
+      "nik": "3204120309130005",
+      "nisn": "0139854721",
+      "gender": "Laki-laki",
+      "tempat_lahir": "Bandung",
+      "tanggal_lahir": "2013-09-03",
+      "nama_wali": "Joko Santoso",
+      "kontak_wali": "08122334455",
+      "sekolah_asal": "SD Negeri Soreang 01",
+      "alamat": "Jl. Ahmad Yani No. 12, Soreang, Bandung",
+      "tanggal_daftar": "2026-06-01T08:30:00.000Z",
+      "status": "disetujui"
+    },
+    {
+      "id": "PPDB-915034",
+      "nama": "Siti Rahmawati",
+      "nik": "3204124905130002",
+      "nisn": "0134928153",
+      "gender": "Perempuan",
+      "tempat_lahir": "Jakarta",
+      "tanggal_lahir": "2013-05-19",
+      "nama_wali": "Imam Rahmawan",
+      "kontak_wali": "08139472648",
+      "sekolah_asal": "MIN 2 Bandung",
+      "alamat": "Komplek Gading Tutuka blok B2 No 14, Soreang",
+      "tanggal_daftar": "2026-06-02T10:15:00.000Z",
+      "status": "proses"
+    },
+    {
+      "id": "PPDB-128456",
+      "nama": "Andi Wijaya",
+      "nik": "3204121212130001",
+      "gender": "Laki-laki",
+      "tempat_lahir": "Bandung",
+      "tanggal_lahir": "2013-12-12",
+      "nama_wali": "Hery Wijaya",
+      "kontak_wali": "08529482716",
+      "sekolah_asal": "SD Swasta Pelopor Bangsa",
+      "alamat": "Kp. Citeureup RT 03 RW 01, Soreang",
+      "tanggal_daftar": "2026-06-02T14:45:00.000Z",
+      "status": "ditolak"
+    }
+  ]
+}

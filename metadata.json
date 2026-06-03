@@ -1,0 +1,6 @@
+{
+  "name": "Landing Page Sekolah dengan Multirole Panel",
+  "description": "Landing page sekolah dinamis yang dilengkapi dengan panel admin multirole (Admin dan Operator) untuk mengelola seluruh konten, profil, logo, artikel, galeri, dan pengaturan secara real-time.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
