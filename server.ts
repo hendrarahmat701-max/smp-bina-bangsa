@@ -1267,7 +1267,7 @@ async function startServer() {
     });
   }
 
-  app.listen(port, () => {
+  app.listen(port, '0.0.0.0', () => {
     console.log(`Fullstack server running successfully at http://localhost:${port} in ${isProd ? 'PRODUCTION' : 'DEVELOPMENT'} mode.`);
   });
 }
