@@ -7,7 +7,7 @@ initDB();
 
 const app = express();
 const isProd = process.env.NODE_ENV === 'production';
-const port = 3000;
+const port = process.env.PORT ? parseInt(process.env.PORT, 10) : 3000;
 
 // Body Parsers (increased limits in case of base64 images uploads)
 app.use(express.json({ limit: '50mb' }));
